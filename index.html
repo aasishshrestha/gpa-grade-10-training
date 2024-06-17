@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aasish</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            background-color: green;
+            padding: 5px;
+            height: 60px;
+            align-items: center;
+            /* position: fixed;
+            width: 100%; */
+        }
+
+        nav h1,
+        nav a {
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 10px 0 15px;
+            font-weight: bold;
+        }
+
+        nav h1 {
+            font-size: 40px;
+            margin: 0 120px 0 20px;
+        }
+
+        .hero {
+            background-color: aqua;
+            height: 400px;
+            padding: 100px 0;
+        }
+
+        .herocontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .herocontent h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .herocontent p {
+            font-size: 20px;
+        }
+
+        .herocontent span {
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+        }
+
+        /* ------------------------------------------------------------------------------------------------------------------------ */
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        #service,
+        #about,
+        #skills-hobbies,
+        #contact {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: green;
+            margin-bottom: 30px;
+        }
+
+        .servicebox {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #service .serdiv {
+            width: 380px;
+            height: 120px;
+            padding: 15px;
+            background-color: whitesmoke;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+        }
+
+        .serdiv h3 {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+
+        .serdiv p {
+            text-align: justify;
+        }
+
+        #skills-hobbies {
+            background-color: whitesmoke;
+            padding: 40px;
+        }
+
+        .shcontent {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .shcontent {
+            text-align: left;
+        }
+
+        .shcontent h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .skills,
+        .hobbies {
+            background-color: white;
+            padding: 20px;
+            width: 40%;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* -----------------------------------------------------------------------contact----------------------------------------------- */
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact-form,
+        .contactinfo {
+            width: 48%;
+            padding: 40px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+        }
+
+        .contactinfo {
+            text-align: left;
+        }
+
+        .contactinfo ul li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+
+        .contactinfo ul a{
+            text-decoration: none;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+
+        /* ------------------------------------------------footer---------------------------------------------------------------- */
+        footer{
+            margin-top: 40px;
+            color: white;
+            text-align: center;
+            background-color: green;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="headname">Aasish</h1>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section class="hero">
+            <div class="herocontent">
+                <h1>Who am I?</h1>
+                <p>Welcome to my webpage! I'm</p><span>Aasish Shrestha</span>
+                <p>I am in grade 10. I'm interested in web development.</p>
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <section id="service">
+            <h2>Services</h2>
+            <div class="servicebox">
+                <div class="serdiv">
+                    <h3>Web Designing</h3>
+                    <div class="servicecontent">
+                        <p>I can desing simple and elegant website for you. I offer web design services to help you
+                            build an engaging and user-friendly website.</p>
+                    </div>
+                </div>
+                <div class="serdiv">
+                    <h3>Home Tution</h3>
+                    <div class="servicecontent">
+                        <p>I offer personalized tuition services for students in grades 6-10, specially for subjects
+                            like Math, Science, and English.</p>
+                    </div>
+                </div>
+                <div class="serdiv">
+                    <h3>Sketch</h3>
+                    <div class="servicecontent">
+                        <p> I offer custom sketching services, bringing your ideas to life through detailed and
+                            expressive artwork.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit minima ducimus nisi aspernatur
+                voluptatem consectetur, aliquam harum repellendus dolor impedit unde. Illo impedit at eius numquam
+                similique tempore consectetur accusamus magni pariatur amet autem velit, dolore illum molestias
+                perspiciatis consequatur recusandae nemo. Placeat reiciendis modi ex repudiandae asperiores sint, ea rem
+                ipsam facere. Beatae fugit saepe ipsa consequatur consequuntur harum sed dolore molestias provident odio
+                pariatur velit, qui iusto architecto cum autem ducimus perspiciatis labore porro? In reprehenderit nam a
+                eum nihil, ratione voluptates aspernatur omnis quasi vel accusantium cum labore repellat autem dicta?
+                Sunt libero odio praesentium corrupti!</p>
+        </section>
+    </main>
+    <section id="skills-hobbies">
+        <div class="container">
+            <h2>Skills and Hobbies</h2>
+            <div class="shcontent">
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Web Design (HTML & CSS)</li>
+                        <li>Sketching and Drawing</li>
+                        <li>Mathematics and Science Tutoring</li>
+                        <li>Exploring New Technologies</li>
+
+                    </ul>
+                </div>
+                <div class="hobbies">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Playing Sports</li>
+                        <li>Listening to music</li>
+                        <li>Travelling and Eating</li>
+                        <li>Reading and Writing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact me</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Your Name" id="name" name="name" required>
+                        <input type="email" placeholder="abc@gmail.com" id="email" name="email" required>
+                        <input type="text" placeholder="Subject" id="subject" name="subject" required>
+                        <textarea id="message" placeholder="Write your message here......" name="message" rows="5"
+                            required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contactinfo">
+                    <ul>
+                        <li><a href="">Facebook</a> | <a href="">Github</a> | <a href="">LinkedIn</a></li>
+                        
+                        <li>Aasish Shrestha</li>
+                        <li>aasish@gmail.com</li>
+                        <li>+9779800011122</li>
+                        <li>Itahari-8, Sunsari, Nepal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright &#169; 2024, Aasish Shrestha, All rights reserved.
+    </footer>
+</body>
+
+</html>
